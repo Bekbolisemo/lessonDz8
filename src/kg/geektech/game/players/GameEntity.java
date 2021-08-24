@@ -1,12 +1,15 @@
 package kg.geektech.game.players;
 
 public abstract class GameEntity {
-     int health;
-     int damage;
+     private int health;
+     private int damage;
+     private String fullName;
 
-    public GameEntity(int health, int damage) {
+
+    public GameEntity(int health, int damage, String fullName) {
         this.health = health;
         this.damage = damage;
+        this.fullName = fullName;
     }
 
     public int getHealth() {
@@ -27,5 +30,13 @@ public abstract class GameEntity {
 
     public void setDamage(int damage) {
         this.damage = damage;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 }

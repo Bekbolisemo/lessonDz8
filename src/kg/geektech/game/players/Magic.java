@@ -5,8 +5,8 @@ import kg.geektech.game.general.RPG_Game;
 import java.util.Random;
 
 public class Magic extends Hero {
-    public Magic(int health, int damage) {
-        super(health, damage, SuperAbility.BOOST);
+    public Magic(int health, int damage,String fullName) {
+        super(health, damage, SuperAbility.BOOST,fullName);
     }
 
     @Override
