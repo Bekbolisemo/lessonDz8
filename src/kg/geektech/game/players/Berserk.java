@@ -15,7 +15,7 @@ public class Berserk extends Hero {
         switch (RPG_Game.random.nextInt(3)+1) {
 
             case 1 :
-                heroes[3].setDamage( heroes[3].getDamage() +  RPG_Game.random.nextInt(15) + 1 );
+                this.setDamage( this.getDamage() + RPG_Game.random.nextInt(15) + 1  );
                 System.out.println("Берсерк октевировал супер спасобность ");
                 break;
 
