@@ -25,4 +25,4 @@ public class Necromand extends Hero {
 
         }
     }
-}
+
